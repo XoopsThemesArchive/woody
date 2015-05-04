@@ -1,0 +1,53 @@
+/*------------------------------------------------
+Designed by EXTRAFFIC	copyright (c) ExPiece
+          http://www.expiece.com/html/
+------------------------------------------------*/
+
+/*------------------------------------------------
+リセッター
+------------------------------------------------*/
+
+* {padding: 0; margin: 0;}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,input,textarea,p,blockquote,
+th,td,address,caption,cite,code,dfn,em,strong,var {
+	margin:				0;
+	padding:			0;
+	font-style:			normal;
+	font-size:			100%;
+}
+
+table {
+	width:				100%;
+}
+
+q:before,q:after {
+	content:			'';
+}
+
+object,embed {
+	vertical-align:		top;
+}
+
+hr,legend {
+	display:			none;
+}
+
+img,abbr,acronym,fieldset {
+	border:				0;
+}
+
+/*リンク全般定義-----------------------*/
+/*リンク*/
+a {
+	color:				#c00;
+	text-decoration:	none;
+}
+
+/*ポインタ中*/
+a:hover {
+	color:				#00f;
+	text-decoration:	underline;
+}
+

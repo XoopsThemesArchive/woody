@@ -1,0 +1,598 @@
+/*------------------------------------------------
+Designed by EXTRAFFIC	copyright (c) ExPiece
+          http://www.expiece.com/html/
+------------------------------------------------*/
+
+/*------------------------------------------------
+全般定義
+------------------------------------------------*/
+body {
+	overflow:			auto;
+	color:				#300;
+	font-size:			75%;
+	line-height:		1.5;
+	font-family:		Verdana,
+						Helvetica,
+						'ＭＳ Ｐゴシック',
+						'Hiragino Kaku Gothic Pro',
+						'ヒラギノ角ゴ Pro W3',
+						osaka,
+						sans-serif;
+}
+/*テーブル全般定義---------------------*/
+table td {
+	vertical-align:		top;
+}
+table th {
+	padding:			5px;
+	text-align:			left;
+	vertical-align:		top;
+	background:			#b6934b url(../image/th_bg.gif) repeat-x left;
+	border-bottom:		1px solid #855a00;
+}
+/*一般タグ全般定義---------------------*/
+h1 {
+	font-size:			300%;
+	font-weight:		bold;
+	font-family:		'Comic Sans MS';
+}
+h2 {
+	font-size:			200%;
+	font-family:		'Comic Sans MS';
+}
+h3 {
+	font-size:			160%;
+	font-family:		'Comic Sans MS';
+}
+h4,h5 {
+	font-size:			140%;
+	font-family:		'Comic Sans MS';
+}
+input,select {
+	padding:			2px 0;
+	font-family:		arial,
+						Verdana,
+						Helvetica,
+						'ＭＳ Ｐゴシック',
+						'Hiragino Kaku Gothic Pro',
+						'ヒラギノ角ゴ Pro W3',
+						osaka,
+						sans-serif;
+}
+input:hover, select:hover, textarea:hover {
+	border:				2px solid #ddf;
+	background:			#fafafa;
+}
+textarea {
+	overflow:			auto;
+	font-family:		arial,
+						Verdana,
+						Helvetica,
+						'ＭＳ Ｐゴシック',
+						'Hiragino Kaku Gothic Pro',
+						'ヒラギノ角ゴ Pro W3',
+						osaka,
+						sans-serif;
+}
+abbr, acronym {
+	cursor:				help;
+}
+/*リスト表示全般定義-------------------*/
+ul {
+	list-style:			disc outside;
+	text-align:			left;
+}
+li {
+	color:				#630;
+	line-height:		1.8;
+	margin-left:		15px;
+	list-style:			disc outside;
+}
+/*-----------------------------------------------
+#container
+-----------------------------------------------*/
+#container {
+}
+/*-----------------------------------------------
+[ ヘッダ部定義 ] #container
+-----------------------------------------------*/
+.head_wrap {
+	width:				810px;
+	position:			relative;
+	left:				50%;
+	margin:				30px 0  0 -405px;
+	height:				176px;
+	overflow:			hidden;
+	background:			url(../image/head_bg.gif) no-repeat left top;
+}
+.head_wrap a {
+	color:				#900;
+}
+.head_wrap h1 {
+	margin:				10px 20px 5px 20px;
+	text-align:			center;
+}
+.head_wrap h2 {
+	margin:				10px 20px 5px 20px;
+	text-align:			center;
+}
+.head_wrap fieldset {
+	margin-right:		20px;
+	text-align:			right;
+}
+.login_block ul a,
+.login_block li a {
+	padding:			3px 3px 2px 15px;
+	color:				#300;
+	font-size:			120%;
+	background:			url(../image/login_block_a.gif) no-repeat left;
+}
+.login_block ul a:hover,
+.login_block li a:hover {
+	color:				#300;
+	text-decoration:	none;
+	background:			url(../image/login_block_hover.gif) no-repeat left;
+}
+.head_wrap ul,
+.head_wrap li {
+	float:				left;
+	color:				#300;
+	list-style:			none;
+}
+.bold {
+	font-weight:		bold;
+}
+/*-----------------------------------------------
+[ フッタブロックの定義 ] #container
+-----------------------------------------------*/
+.footerbar_wrap {
+	width:				810px;
+	position:			relative;
+	left:				50%;
+	margin-left:		-405px;
+	clear:				both;
+	height:				92px;
+	background:			url(../image/foot_bg.gif) no-repeat left top;
+}
+.footerbar {
+	font-family:		arial;
+	clear:				both;
+	overflow:			hidden;
+	padding:			50px 0;
+	text-align:			center;
+}
+.footerbar a {
+	color:				#900;
+}
+/*-----------------------------------------------
+スクロールアップ
+-----------------------------------------------*/
+.scroll {
+	clear:				both;
+	padding:			15px 5px 3px 0;
+	text-align:			center;
+}
+.scroll a {
+	background:			url(../image/scroll_up_h.gif) no-repeat right;
+}
+.scroll a:hover {
+	background:			url(../image/scroll_up.gif) no-repeat right;
+}
+/*-----------------------------------------------
+ページナビ
+-----------------------------------------------*/
+span.pagenav_on {
+	padding:			5px 8px;
+	font-size:			15px;
+	text-decoration:	none;
+	font-weight:		bold;
+	border:				1px solid #300;
+	background:			#fff;
+}
+span.pagenav_off {
+	padding:			5px 8px;
+	font-size:			15px;
+	text-decoration:	none;
+	border:				1px solid #600;
+	background:			#b6934b;
+}
+/*-----------------------------------------------
+[ 左・中央・右各ブロックラッパー ] #container
+-----------------------------------------------*/
+#l_clr_r_wrap {
+	width:				810px;
+	position:			relative;
+	left:				50%;
+	margin-left:		-405px;
+	clear:				both;
+	overflow:			hidden;
+	background:			#855a00 url(../image/content_bg.gif) repeat-y left;
+}
+/*-----------------------------------------------
+[ バナー定義 ]　#l_clr_r_wrap
+-----------------------------------------------*/
+#l_clr_r_wrap #banner div {
+	overflow:			hidden;
+}
+/*-----------------------------------------------
+[ モジュール定義 ]　#l_clr_r_wrap
+-----------------------------------------------*/
+#content_wrap {}
+#content {
+	clear:				both;
+	overflow:			hidden;
+}
+#content h1{
+	padding-left:		25px;
+	background:			url(../image/h1_list.gif) no-repeat left;
+}
+#content legend{
+	display:			block;
+}
+/*-----------------------------------------------
+[ 中央ブロック定義 ]　#l_clr_r_wrap
+-----------------------------------------------*/
+#centercolumn {
+	float:				left;
+	width:				67%;
+	padding:			0 0 0 25px;
+}
+/*-----------------------------------------------
+[ 中央-中央ブロック定義 ] .centercolumn
+-----------------------------------------------*/
+#centerCcolumn {
+	clear:				both;
+}
+/*-----------------------------------------------
+[ 中央-左・右各ブロック タイトル定義 ] .centerColumn
+-----------------------------------------------*/
+#centerCcolumn .blockTitle_wrap,
+#centerLcolumn .blockTitle_wrap,
+#centerRcolumn .blockTitle_wrap {
+	background:			url(../image/c_col_title.gif) no-repeat left;
+}
+#centerCcolumn .blockTitle {
+	overflow:			hidden;
+	padding:			4px 0 3px 25px;
+	font-size:			130%;
+	background:			url(../image/c_col_title_bg.gif) no-repeat left bottom;
+}
+#centerLcolumn .blockTitle,
+#centerRcolumn .blockTitle	{
+	overflow:			hidden;
+	padding:			4px 0 3px 25px;
+	font-size:			130%;
+
+}
+/*-----------------------------------------------
+[ 中央-左・右各ブロック コンテンツ定義 ] .centerColumn
+-----------------------------------------------*/
+#centerCcolumn .blockContent_wrap,
+#centerLcolumn .blockContent_wrap,
+#centerRcolumn .blockContent_wrap {
+}
+
+#centerCcolumn .blockContent,
+#centerLcolumn .blockContent,
+#centerRcolumn .blockContent {
+	overflow:			hidden;
+	padding:			10px 0;
+}
+/*-----------------------------------------------
+[ 中央-左・右各ブロックラッパー ] .centercolumn
+-----------------------------------------------*/
+#cl_cr_wrap {
+	clear:				both;
+}
+/*-----------------------------------------------
+[ 中央-左ブロック定義 ] #cl_cr_wrap
+-----------------------------------------------*/
+#centerLcolumn {
+	float:				left;
+	width:				49.5%;
+}
+/*-----------------------------------------------
+[ 中央-右ブロック定義 ] #cl_cr_wrap
+-----------------------------------------------*/
+#centerRcolumn {
+	float:				right;
+	width:				49.5%;
+}
+/*-----------------------------------------------
+[ 左・右ブロック定義 ]　#l_clr_r_wrap
+-----------------------------------------------*/
+.l_r_column_wrap {
+	float:				right;
+	width:				22%;
+	padding:			0 33px 0 0;
+}
+/*-----------------------------------------------
+[ 左ブロック,右ブロック定義 ]　.l_r_column_warp
+-----------------------------------------------*/
+#leftcolumn,
+#rightcolumn  {
+	clear:				both;
+	overflow:			auto;
+}
+/*-----------------------------------------------
+[ 左ブロック,右ブロック タイトルの定義 ] #leftcolumn
+-----------------------------------------------*/
+#leftcolumn .blockTitle_wrap,
+#rightcolumn .blockTitle_wrap {
+	background:			url(../image/lr_col_title.gif) no-repeat left;
+}
+
+#leftcolumn .blockTitle,
+#rightcolumn .blockTitle {
+	overflow:			hidden;
+	padding:			4px 0 3px 25px;
+	font-size:			130%;
+	background:			url(../image/lr_col_title_bg.gif) no-repeat bottom;
+}
+/*-----------------------------------------------
+[ 左ブロック,右ブロック コンテンツ定義 ] #leftcolumn
+-----------------------------------------------*/
+#leftcolumn .blockContent_wrap,
+#rightcolumn .blockContent_wrap {
+	overflow:			hidden;
+}
+#leftcolumn .blockContent,
+#rightcolumn .blockContent {
+	padding:			10px 0;
+}
+/*-----------------------------------------------
+[ メインメニュー定義 ] #leftcolumn
+-----------------------------------------------*/
+#mainmenu a {
+	display:			block;
+	padding:			4px;
+}
+#mainmenu a:hover {
+	background:			url(../image/arrow_movie.gif) no-repeat right;
+}
+#mainmenu a.menuTop {
+}
+#mainmenu a.menuMain {
+}
+#mainmenu a.menuSub {
+	margin-left:		10px;
+	padding-left:		10px;
+	border-left:		5px solid #630;
+	background:			url(../image/submenu_bg.gif) no-repeat left bottom;
+}
+#mainmenu a:hover.menuSub {
+	margin-left:		10px;
+	border-left:		5px solid #630;
+	background:			url(../image/submenu_bg.gif) no-repeat left bottom;
+}
+/*-----------------------------------------------
+[ ユーザメニュー定義 ] #leftcolumn
+-----------------------------------------------*/
+#usermenu a {
+	display:			block;
+	padding:			4px;
+}
+#usermenu a:hover {
+	background:			url(../image/arrow_movie.gif) no-repeat right;
+}
+#usermenu a.menuTop {
+}
+#usermenu a.menuMain {
+}
+#usermenu a.highlight {
+}
+/*-----------------------------------------------
+フォーラム定義：外枠
+-----------------------------------------------*/
+.outer {
+	padding:			1px;
+	border:				1px solid #ddd;
+}
+/*-----------------------------------------------
+フォーラム定義：投稿情報欄
+-----------------------------------------------*/
+.head {
+	padding:			5px;
+	margin-bottom:		1px;
+	background:			#eee;
+	border-bottom:		1px solid #ccc;
+}
+/*-----------------------------------------------
+フォーラム定義：交互色定義
+-----------------------------------------------*/
+.even {
+	padding:			5px;
+	margin-bottom:		1px;
+	background:			#fafafa;
+	border-bottom:		1px solid #ccc;
+}
+tr.even td, tr.even {
+	padding:			5px;
+	margin-bottom:		1px;
+	border-bottom:		1px solid #ccc;
+}
+.odd {
+	padding:			5px;
+	margin-bottom:		1px;
+	background:			#f5f5f5;
+	border-bottom:		1px solid #ccc;
+}
+tr.odd td, tr.odd {
+	padding:			5px;
+	margin-bottom:		1px;
+	border-bottom:		1px solid #ccc;
+}
+tr.odd:hover, tr.even:hover {
+	background:			#eee;
+	border-bottom:		1px solid #ccc;
+}
+/*-----------------------------------------------
+フォーラム定義：フッター
+-----------------------------------------------*/
+.foot {
+	padding:			5px;
+	background:			#eee;
+	border-bottom:		1px solid #ccc;
+}
+/*-----------------------------------------------
+最新ニュース定義：外枠
+-----------------------------------------------*/
+.item {
+}
+/*-----------------------------------------------
+最新ニュース定義：タイトルバー
+-----------------------------------------------*/
+.itemHead {
+	padding:			7px 3px 5px 10px;
+	border-bottom:		3px dotted #630;
+}
+/*-----------------------------------------------
+最新ニュース定義：投稿情報欄
+-----------------------------------------------*/
+.itemInfo {
+	padding:			3px;
+	text-align:			right;
+}
+/*-----------------------------------------------
+最新ニュース定義：タイトル設定
+-----------------------------------------------*/
+.itemTitle {
+	font-size:			130%;
+}
+/*-----------------------------------------------
+最新ニュース定義：投稿者
+-----------------------------------------------*/
+.itemPoster {
+}
+/*-----------------------------------------------
+最新ニュース定義：投稿日
+-----------------------------------------------*/
+.itemPostDate {
+}
+/*-----------------------------------------------
+最新ニュース定義：ステータス
+-----------------------------------------------*/
+.itemStats {
+}
+/*-----------------------------------------------
+最新ニュース定義：コンテンツ部分
+-----------------------------------------------*/
+.itemBody {
+	clear:				both;
+	overflow:			hidden;
+	padding:			5px;
+	background:			#fff;
+	border:				1px solid #b6934b;
+}
+.itemText {
+	line-height:		150%;
+}
+.itemText:first-letter {
+	font-size:			150%;
+	font-weight:		bold;
+}
+/*-----------------------------------------------
+最新ニュース定義：フッター
+-----------------------------------------------*/
+.itemFoot {
+	padding:			3px 3px 6px 5px;
+	text-align:			right;
+}
+.itemAdminLink {
+}
+.itemPermaLink {
+}
+/*-----------------------------------------------
+システムメッセージ：エラー、コンファーム、リザルト
+-----------------------------------------------*/
+div.errorMsg {
+	padding:			10px;
+	font-weight:		bold;
+	text-align:			center;
+	background-color:	#ffcccc;
+	border-top:			1px solid #ddddff;
+	border-left:		1px solid #ddddff;
+	border-right:		1px solid #aaaaaa;
+	border-bottom:		1px solid #aaaaaa;
+}
+div.confirmMsg {
+	padding:			10px;
+	font-weight:		bold;
+	text-align:			center;
+	color:				#136c99;
+	background-color:	#f6f6f6;
+	border-top:			1px solid #ddddff;
+	border-left:		1px solid #ddddff;
+	border-right:		1px solid #aaaaaa;
+	border-bottom:		1px solid #aaaaaa;
+}
+div.resultMsg {
+	padding:			10px;
+	font-weight:		bold;
+	text-align:			center;
+	color:				#777;
+	background-color:	#f6f6f6;
+	border-top:			1px solid silver;
+	border-left:		1px solid silver;
+	border-right:		1px solid #666666;
+	border-bottom:		1px solid #666666;
+}
+/*-----------------------------------------------
+Xoopsコード記述定義
+-----------------------------------------------*/
+.xoopsCode {
+	height:				150px;
+	width:				400px;
+	overflow:			auto;
+	padding:			3px;
+	border:				1px inset #aaa;
+	background:			#fff;
+}
+/*-----------------------------------------------
+引用部分定義
+-----------------------------------------------*/
+.xoopsQuote {
+	height:				150px;
+	width:				400px;
+	overflow:			auto;
+	padding:			3px;
+	border:				1px inset #aaa;
+	background:			#fff;
+}
+.comTitle {
+	margin-bottom:		2px;
+}
+.comText {
+	padding:			2px;
+}
+.comUserStat {
+	margin:				2px;
+	padding:			2px;
+	font-size:			90%;
+	color:				#777;
+	border:				1px solid #fff;
+	background-color:	#eee;
+}
+.comUserStatCaption {
+}
+.comUserStatus {
+	margin-left:		2px;
+	margin-top:			10px;
+	color:				#060;
+}
+.comUserRank {
+	margin:				2px;
+}
+.comUserRankText {
+}
+.comUserRankImg {
+}
+.comUserName {
+}
+.comUserImg {
+	margin:				2px;
+}
+.comDate {
+}
+.comDateCaption {
+}
